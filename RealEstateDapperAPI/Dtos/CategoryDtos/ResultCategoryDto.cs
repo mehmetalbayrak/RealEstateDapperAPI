@@ -2,8 +2,8 @@
 {
     public class ResultCategoryDto
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public bool Status { get; set; }
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
+        public bool CategoryStatus { get; set; }
     }
 }
