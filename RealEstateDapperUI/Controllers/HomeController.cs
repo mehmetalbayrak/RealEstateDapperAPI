@@ -15,7 +15,7 @@ namespace RealEstateDapperUI.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var client = _httpClientFactory.CreateClient();
+            HttpClient client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:44302/api/Products/GetAllProductsWithCategory");
             if (responseMessage.IsSuccessStatusCode)
             {

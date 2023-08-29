@@ -70,11 +70,11 @@
                     <div class="col-lg-4 col-md-6 mt-lg-0 pt-lg-0 mt-4 pt-md-2">
                         <a href="property-single.html">
                             <div class="box16">
-                                <div class="rentext-listing-category"><span>Satılık</span><span>@item.CategoryName</span></div>
-                                <img class="img-fluid" src="~/starter/assets/images/p3.jpg" alt="">
+                                <div class="rentext-listing-category"><span>@item.Type</span><span>@item.CategoryName</span></div>
+                                <img class="img-fluid" src="@item.CoverImage" alt="">
                                 <div class="box-content">
                                     <h3 class="title">$@item.Price</h3>
-                                    <span class="post">@item.District - @item.City</span>
+                                    <span class="post">@item.Address @item.District - @item.City</span>
 
                                 </div>
                             </div>
